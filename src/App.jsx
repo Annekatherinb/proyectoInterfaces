@@ -21,7 +21,13 @@ function App() {
       setMensaje('Inicio de sesión exitoso');
       // Aquí puedes redirigir al usuario a la página de inicio, etc.
     } else {
-      setMensaje('Credenciales Incorrectas');
+      setMensaje('Credenciales Incorrectas, digite nuevamente usuario y contraseña');
+      setUsername('');
+      setPassword('');
+      
+      setTimeout(() => {
+        setMensaje('');
+      }, 3000); // 3 segundos
     }
   };
 
