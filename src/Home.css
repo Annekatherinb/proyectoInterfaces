@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #f9f5dd;
+    text-align: start;
+  }
+  
+  h1 {
+  
+    font-family: serif;
+    font-size: 100%;
+    /*line-height: 1.1;*/
+    /*font-weight: bold;*/
+
+  }
