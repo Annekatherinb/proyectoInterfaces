@@ -5,7 +5,7 @@ import './navBar.css'
 function NavBar() {
   return (
     <div className='navbar'>
-        <img src='' alt='' className='logo'></img>
+        <img src='proyecto.png' alt='' className='logo'></img>
         <ul>
             <li>Home</li>
             <li>Inventario</li>
@@ -13,7 +13,7 @@ function NavBar() {
         </ul>
         <div className='search'>
             <input type='text' placeholder='Search'></input>
-            <img src='' alt=''></img>
+            <img src='/' alt=''></img>
         </div>
     </div>
   );
