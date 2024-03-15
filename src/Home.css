@@ -1,6 +1,7 @@
 /* Estilos para el contenedor principal de HomePage */
 .homepage-container {
   padding-top: 60px; /* Espacio para la barra de navegación */
+  border-left-width: 3px;
 }
 
 
@@ -10,7 +11,6 @@ body {
     min-width: 320px;
     min-height: 100vh;
     text-align: start;
-    
   }
   
 h1 {
