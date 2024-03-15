@@ -13,11 +13,19 @@ body {
     
   }
   
-  h1 {
+h1 {
   
     font-family: serif;
     font-size: 100%;
     /*line-height: 1.1;*/
     /*font-weight: bold;*/
 
-  }
+}
+
+.imagen{
+  width: 800px; /* Ancho deseado */
+  height: 500px; /* Altura automática para mantener la proporción */
+  display: block; /* Hacer que la imagen sea un elemento de bloque */
+  margin: 0 auto 20px; /
+
+}
