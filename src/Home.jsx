@@ -1,11 +1,22 @@
 import React from 'react';
-import './Home.css'
+import './Home.css';
+import Sidebar from './components/sideBar.jsx';
+import NavBar from './components/navBar.jsx';
 
 function HomePage() {
   return (
     <div>
-      <h1>MARKET-KEEPER PRO</h1>
-      {/* Aquí puedes agregar cualquier contenido que desees mostrar en la página principal */}
+      <div className='navbar'>
+        <NavBar />
+      </div>
+      
+      <div style={{ display: 'flex' }}>
+        <Sidebar />
+        <div className='content'>
+          <h1>MARKET-KEEPER PRO</h1>
+          {/* Otro contenido */}
+        </div>
+      </div>
     </div>
   );
 }

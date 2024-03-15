@@ -1,17 +1,44 @@
-body {
-    margin: 0;
-    display: flex;
-    min-width: 320px;
-    min-height: 100vh;
-    background-color: #f9f5dd;
-    text-align: start;
-  }
-  
-  h1 {
-  
-    font-family: serif;
-    font-size: 100%;
-    /*line-height: 1.1;*/
-    /*font-weight: bold;*/
+/* Estilos para el contenedor principal de HomePage */
+.homepage-container {
+  padding-top: 60px; /* Espacio para la barra de navegación */
+}
 
-  }
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f9f5dd;
+  text-align: center;
+}
+
+h1 {
+
+  font-family: serif;
+  font-size: 100%;
+  text-align: center;
+  /*line-height: 1.1;*/
+  /*font-weight: bold;*/
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%; /* Ajusta la altura según la altura de la ventana */
+  width: 250px; /* Ancho de la barra lateral */
+  background-color: #f8f9fa; /* Color de fondo de la barra lateral */
+  border-right: 1px solid #dee2e6; /* Borde derecho para separar el contenido */
+  padding-top: 60px; /* Espacio para el encabezado de la barra lateral */
+}
+
+.sidebar-nav {
+  padding-left: 15px; /* Espaciado para los elementos de navegación */
+}
+
+.sidebar-nav .nav-item {
+  margin-bottom: 10px; /* Espaciado entre elementos de navegación */
+}
+
