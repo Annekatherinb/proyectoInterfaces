@@ -18,6 +18,8 @@ const users = [
     const [mensaje, setMensaje] = useState('');
 
     const [rememberMe, setRememberMe] = useState(false);
+    const [loginSuccess, setLoginSuccess] = useState(false);
+    const [hideImage, setHideImage] = useState(false); // Nuevo estado para controlar si se oculta la imagen
 
     const handleCheckboxChange = () => {
         setRememberMe(!rememberMe);
@@ -32,9 +34,18 @@ const users = [
         if (rememberMe) {
             // Guardar credenciales en el almacenamiento local
             localStorage.setItem('username', username);
-            localStorage.setItem('password', password);
+            localStorage.setItem('password', password)
         }
-        nave('/')
+        
+        setLoginSuccess(true); // Establecer el éxito del inicio de sesión a true
+
+        setTimeout(() => {
+          setMensaje('');
+          setLoginSuccess(false);
+          setHideImage(true)
+        }, 2000);
+        
+        setIsMoving(true);
         
       } else {
         setMensaje('Credenciales Incorrectas, digite nuevamente usuario y contraseña');
@@ -48,25 +59,33 @@ const users = [
     };
   
     return (
-     <div className="login">
-      <form onSubmit={handleSubmit}>
-        <h1>Login</h1>
-        <div className="input-box">
-          <input type="text" name='username' id="username" autoComplete="username" placeholder='Username'value={username} onChange={(e) => setUsername(e.target.value)} required />
+
+      <div className="login">
+        <div className="login-container">
+          <form onSubmit={handleSubmit}>
+            <h1>Login</h1>
+            <div className="input-box">
+              <input type="text" name='username' id="username" autoComplete="username" placeholder='Username'value={username} onChange={(e) => setUsername(e.target.value)} required />
+            </div>
+            <div className="input-box">
+              <input type="Password" name='password' id="password" autoComplete="current-password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+            </div>
+            <div className="remember">
+              <label><input type="checkbox" checked={rememberMe} onChange={handleCheckboxChange} />Remember me</label>
+              <span style={{ marginLeft: '10px' }}><a href="#">Forgot Password?</a></span>
+            </div>
+            <button type='submit' className='but'> Login</button>
+          </form>
         </div>
-        <div className="input-box">
-          <input type="Password" name='password' id="password" autoComplete="current-password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+        {mensaje && <p>{mensaje}</p>}
+        <div className={loginSuccess ? 'background-image move' : 'background-image'}>
+        {!hideImage && <img src="/carrito-de-supermercado.png" alt="Shopping cart" />}
         </div>
-        <div className="remember">
-          <label><input type="checkbox" checked={rememberMe} onChange={handleCheckboxChange} />Remember me</label>
-          <span style={{ marginLeft: '10px' }}><a href="#">Forgot Password?</a></span>
-        </div>
-        <button type='submit' className='but'> Login</button>
-      </form>
-      {mensaje && <p>{mensaje}</p>}
-     </div>
+      </div>
+    
     )
   }
+  
   
   export default Login
   

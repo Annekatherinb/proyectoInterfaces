@@ -41,3 +41,56 @@
 .read-the-docs {
   color: #888;
 }
+.input-box {
+  margin-bottom: 10px; /* Agrega un margen inferior a los input */
+}
+
+.remember {
+  margin-bottom: 10px; /* Agrega un margen inferior al grupo de Remember y Forgot Password */
+}
+
+.but {
+  margin-top: 10px; /* Agrega un margen superior al botón */
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semi-transparente */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  width: 400px; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra horizontalmente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+.background-image {
+  position: relative;
+  width: 60%; /* O ajusta según tus necesidades */
+  height: 250px; /* Altura de tu imagen */
+
+}
+
+.background-image img {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transform: translateX(35%); 
+  width: 90%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.move {
+
+    animation: moveImage 4s forwards; ;
+}
+
+
+
+@keyframes moveImage {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(900px); /* Mueve la imagen 100px hacia la derecha */
+    opacity: 0;
+  }
+}
