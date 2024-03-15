@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Login from './Login.jsx'
-import HomePage from './Login.jsx'
+import HomePage from './Home.jsx' 
 import barra from './components/sideBar.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
