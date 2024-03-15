@@ -1,8 +1,15 @@
+/* Estilos para el contenedor principal de HomePage */
+.homepage-container {
+  padding-top: 60px; /* Espacio para la barra de navegación */
+}
+
+
 body {
     margin: 0;
     display: flex;
     min-width: 320px;
     min-height: 100vh;
+    background-color: #f9f5dd;
     text-align: start;
   }
   
