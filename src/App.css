@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 .logo {
@@ -72,6 +73,7 @@
   position: absolute;
   width: 20%; /* O ajusta según tus necesidades */
   height: 250px; /* Altura de tu imagen */
+  
 
 }
 
