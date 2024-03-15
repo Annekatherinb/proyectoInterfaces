@@ -63,6 +63,7 @@ const users = [
       <div className="login">
         <div className="login-container">
           <form onSubmit={handleSubmit}>
+            <img src="/usuario.png" alt="user" className='user'/>
             <h1>Login</h1>
             <div className="input-box">
               <input type="text" name='username' id="username" autoComplete="username" placeholder='Username'value={username} onChange={(e) => setUsername(e.target.value)} required />
