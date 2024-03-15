@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #f9f5dd
+
 }
 
 .logo {
@@ -53,6 +53,14 @@
   margin-top: 10px; /* Agrega un margen superior al botón */
 }
 
+.user{
+  width: 60px; /* Ancho deseado */
+  height: 60px; /* Altura automática para mantener la proporción */
+  display: block; /* Hacer que la imagen sea un elemento de bloque */
+  margin: 0 auto 20px; /
+
+}
+
 .login-container {
   background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semi-transparente */
   border-radius: 10px; /* Bordes redondeados */
@@ -62,8 +70,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 .background-image {
-  position: relative;
-  width: 60%; /* O ajusta según tus necesidades */
+  position: absolute;
+  width: 20%; /* O ajusta según tus necesidades */
   height: 250px; /* Altura de tu imagen */
 
 }
