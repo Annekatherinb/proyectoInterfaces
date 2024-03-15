@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react'  
 import './App.css'
-import { useNavigate } from 'react-router-dom'
+import {BrowserRouter, Link} from 'react-router-dom'
+
 
 
 const users = [
@@ -12,7 +13,6 @@ const users = [
   
   function Login() {
     
-    const nave = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [mensaje, setMensaje] = useState('');
@@ -20,6 +20,7 @@ const users = [
     const [rememberMe, setRememberMe] = useState(false);
     const [loginSuccess, setLoginSuccess] = useState(false);
     const [hideImage, setHideImage] = useState(false); // Nuevo estado para controlar si se oculta la imagen
+    
 
     const handleCheckboxChange = () => {
         setRememberMe(!rememberMe);
@@ -47,6 +48,7 @@ const users = [
         
         setIsMoving(true);
         
+        
       } else {
         setMensaje('Credenciales Incorrectas, digite nuevamente usuario y contraseña');
         setUsername('');
@@ -59,7 +61,6 @@ const users = [
     };
   
     return (
-
       <div className="login">
         <div className="login-container">
           <form onSubmit={handleSubmit}>

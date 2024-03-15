@@ -9,7 +9,6 @@ function HomePage() {
       <div className='navbar'>
         <NavBar />
       </div>
-      
       <div style={{ display: 'flex' }}>
         <Sidebar />
         <div className='content'>
