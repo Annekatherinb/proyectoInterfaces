@@ -29,3 +29,22 @@ h1 {
   margin: 0 auto 20px; /
 
 }
+
+.right{
+  width: 800px;
+  justify-content: left;
+}
+
+.content{
+  justify-content: left;
+}
+
+.lista {
+  padding: 0; /* Elimina el espacio interno predeterminado de las listas */
+  list-style-type: none; /* Elimina los puntos de viñeta predeterminados */
+}
+
+.lista li {
+  padding: 5px 0; /* Ajusta el espacio dentro de cada elemento de la lista */
+  margin-bottom: 20px; /* Agrega espacio entre los elementos de la lista */
+}

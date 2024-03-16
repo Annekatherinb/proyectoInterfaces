@@ -14,18 +14,28 @@ function HomePage() {
         <div className='content'>
           <h1 className="title">Market Keeper Pro</h1>
           <p className="quote">"Optimiza tu negocio, simplifica tu éxito"</p>
-          <img src="/home.png" alt="ImageHome" className='imagen'/>
-          <div className="content">
-            <div className="right">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-              </ul>
-              <ul>
-                <li>Item 3</li>
-                <li>Item 4</li>
-              </ul>
-            </div>
+          <img src="/hom  e.png" alt="ImageHome" className='imagen'/>
+          <div id='right'>
+            <ul>
+              <li> API de Caja Registradora </li>
+              <li> Gestión Dinámica de Precios </li>
+            </ul>
+            <ul>
+              <li> Sistemas de Inventario en Tiempo Real </li>
+              <li> Base de Datos de Proveedores </li>
+            </ul>
+            <ul>
+              <li> Motor de Facturación Detallada </li>
+              <li> Registro Detallado de Movimientos Financieros </li>
+            </ul>
+            <ul>
+              <li> Módulo de Recepción de Productos </li>
+              <li> Análisis Estadístico Avanzado </li>
+            </ul>
+            <ul>
+              <li> Interfaz Gráfica de Usuario (GUI) Optimizado </li>
+              <li> Historial de Ventas en Base de Datos Segura </li>
+            </ul>
           </div>
         </div>
       </div>
