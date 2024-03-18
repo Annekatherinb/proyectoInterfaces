@@ -14,7 +14,7 @@ function HomePage() {
         <div className='content'>
           <h1 className="title">Market Keeper Pro</h1>
           <p className="quote">"Optimiza tu negocio, simplifica tu éxito"</p>
-          <img src="/hom  e.png" alt="ImageHome" className='imagen'/>
+          <img src="/home.png" alt="ImageHome" className='imagen'/>
           <div id='right'>
             <ul>
               <li> API de Caja Registradora </li>

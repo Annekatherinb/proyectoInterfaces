@@ -11,6 +11,7 @@ body {
     min-width: 320px;
     min-height: 100vh;
     text-align: start;
+    background-color: white;
   }
   
 h1 {
@@ -32,7 +33,7 @@ h1 {
 
 .right{
   width: 800px;
-  justify-content: left;
+  text-align: left;
 }
 
 .content{
