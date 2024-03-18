@@ -1,18 +1,20 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom'  
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'  
 import Login from './Login'
-import HomePage from './Home'
+import HomePage from './screems/Home'
+import './index.css';
+/*
 import 'bootstrap/dist/css/bootstrap.min.css'
+*/
 
-
-function App() {
-  return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/home" element={<HomePage />} />
-    </Routes>
-
-  )
-}
-
-export default App
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+      <Router>
+        <Login />
+        <Routes>
+          <Route path="/home" element={<HomePage />} />
+        </Routes>
+      </Router>
+  </React.StrictMode>,
+)

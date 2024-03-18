@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'  
-import './App.css'
-import {BrowserRouter, Link} from 'react-router-dom'
+import './Login.css'
+import {useNavigate} from 'react-router-dom'
 
 
 
@@ -21,6 +21,7 @@ const users = [
     const [loginSuccess, setLoginSuccess] = useState(false);
     const [hideImage, setHideImage] = useState(false); // Nuevo estado para controlar si se oculta la imagen
     
+    const navigate = useNavigate()
 
     const handleCheckboxChange = () => {
         setRememberMe(!rememberMe);
@@ -44,9 +45,11 @@ const users = [
           setMensaje('');
           setLoginSuccess(false);
           setHideImage(true)
+          navigate('../home')
         }, 2000);
         
         setIsMoving(true);
+
         
         
       } else {
@@ -63,7 +66,7 @@ const users = [
     return (
       <div className="login">
         <div className="login-container">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} >
             <img src="/usuario.png" alt="user" className='user'/>
             <h1>Login</h1>
             <div className="input-box">
@@ -80,7 +83,7 @@ const users = [
           </form>
         </div>
         {mensaje && <p>{mensaje}</p>}
-        <div className={loginSuccess ? 'background-image move' : 'background-image'}>
+        <div className={loginSuccess ? 'carrito move' : 'carrito'}>
         {!hideImage && <img src="/carrito-de-supermercado.png" alt="Shopping cart" />}
         </div>
       </div>
