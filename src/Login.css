@@ -1,16 +1,22 @@
-#root {
+
+
+body{
   max-width: 1280px;
   margin:  1px 0 0 1px;
-  padding: 50px 500px 280px 500px;
-  text-align: center;
+  padding: 60px 1030px 280px 500px;
   background: url("public/fondo.jpg");
-  background-size: cover; 
-  background-position: 100% 100%;; 
   background-repeat: no-repeat;
-  
-  
+  background-size:cover;
+  background-size: 1550px 694px;
 }
 
+h1{
+  transform: translate(130px, 8%);
+}
+
+p{
+  transform: translate(130px, 8%);
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -47,17 +53,40 @@
   color: #888;
 }
 .input-box {
+  
   margin-bottom: 10px; /* Agrega un margen inferior a los input */
+  transform: translate(80px, 8%);
 }
 
 .remember {
   margin-bottom: 10px; /* Agrega un margen inferior al grupo de Remember y Forgot Password */
+  transform: translate(50px, 8%);
 }
+
 
 .but {
   margin-top: 10px; /* Agrega un margen superior al botón */
+  transform: translate(145px, 10%);
+  width:70px;
+  height:40px;
+  border-radius: 10px;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgb(0, 255, 183);
+  outline: 1px solid;
+  outline-color: rgb(255, 255, 255);
+  outline-offset: 0px;
+  text-shadow: none;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-
+.but:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #000000;
+}
 .user{
   width: 60px; /* Ancho deseado */
   height: 60px; /* Altura automática para mantener la proporción */
@@ -67,13 +96,14 @@
 }
 
 .login-container {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semi-transparente */
+  position: center;
+  background-color: rgba(255, 255, 255, 0.59); /* Color de fondo semi-transparente */
   border-radius: 10px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   width: 400px; /* Ancho del contenedor */
   margin: 0 auto; /* Centra horizontalmente */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+  transform: translate(75px, 0%);
 }
 
 
@@ -87,7 +117,7 @@
 
 .carrito img {
   position: absolute;
-  top: 20px;
+  top: 40px;
   left: 0;
   transform: translateX(35%); 
   width: 90%;
