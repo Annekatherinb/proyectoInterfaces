@@ -1,23 +1,53 @@
 /* Estilos para la barra lateral */
+
 .sidebar {
-    width: 250px; /* Ancho de la barra lateral */
-    background-color: #f8f9fa; /* Color de fondo */
+    width: 200px; /* Ancho de la barra lateral */
+    height: 1300px;
+    background-color: #8e9091; /* Color de fondo */
     padding: 20px; /* Espaciado interno */
     text-align: center;
+    transform: translate(0px, -9.4%);
+    
+  
   }
   
   /* Estilos para los enlaces de navegación */
   .navbar-nav .nav-item {
-    margin-bottom: 10px; /* Espaciado entre elementos */
+    margin-bottom: 20px; /* Espaciado entre elementos */
   }
   
   .navbar-nav .nav-link {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000; /* Color del texto */
     text-decoration: none; /* Sin subrayado */
     font-weight: bold; /* Negrita */
+    font-size: 170%;
+    text-align: justify;
+    transform: translate(0%, 50%);
   }
   
+  .navbar-nav .nav-link:after,
+  .navbar-nav .nav-link:before{
+    transition: all .5s;
+  }
   .navbar-nav .nav-link:hover {
+    width: 100%;
     color: #007bff; /* Color del texto al pasar el mouse */
   }
-  
+
+  .navbar-nav .nav-link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #050505;
+    height: 1px;
+}
+
+.navbar-nav .nav-link:hover:after  {
+  width: 100%;
+}

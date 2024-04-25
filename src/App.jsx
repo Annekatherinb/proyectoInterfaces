@@ -9,14 +9,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <Router>
-        <Login />
+        <HomePage />
         <Routes>
           
           
-          <Route path="/market" element={<Market />} />
+        
         </Routes>
       </Router>
   </React.StrictMode>,
 )
 
-export default App

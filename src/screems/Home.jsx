@@ -12,31 +12,41 @@ function HomePage() {
       <div style={{ display: 'flex' }}>
         <Sidebar />
         <div className='content'>
-          <h1 className="title">Market Keeper Pro</h1>
-          <p className="quote">"Optimiza tu negocio, simplifica tu éxito"</p>
-          <img src="/home.png" alt="ImageHome" className='imagen'/>
-          <div id='right'>
-            <ul>
-              <li> API de Caja Registradora </li>
-              <li> Gestión Dinámica de Precios </li>
-            </ul>
-            <ul>
-              <li> Sistemas de Inventario en Tiempo Real </li>
-              <li> Base de Datos de Proveedores </li>
-            </ul>
-            <ul>
-              <li> Motor de Facturación Detallada </li>
-              <li> Registro Detallado de Movimientos Financieros </li>
-            </ul>
-            <ul>
-              <li> Módulo de Recepción de Productos </li>
-              <li> Análisis Estadístico Avanzado </li>
-            </ul>
-            <ul>
-              <li> Interfaz Gráfica de Usuario (GUI) Optimizado </li>
-              <li> Historial de Ventas en Base de Datos Segura </li>
+          <div className="contenedor">
+            <p>Market Keeper</p>
+                    <ul>
+                <li>Pro</li>
+                <li>Seguridad</li>
+                <li>Confianza</li>
+                        <li>Tecnologia</li>
             </ul>
           </div>
+          <p className="quote">"Optimiza tu negocio, simplifica tu éxito"</p>
+          <img src="/home.png" alt="ImageHome" className='imagen'/>
+          <thead className='tabla'>
+            <tr>
+              <th scope='col'> API de Caja Registradora </th>
+              <th scope='col'> Gestión Dinámica de Precios </th>
+            </tr>
+          </thead>
+          <tbody className='ta'>
+            <tr>
+              <th scope='row'>Sistemas de Inventario en Tiempo Real</th>
+              <td>Base de Datos de Proveedores</td>
+            </tr>
+            <tr>
+              <th scope='row'> Motor de Facturación Detallada</th>
+              <td> Registro Detallado de Movimientos Financieros </td>
+            </tr>
+            <tr>
+              <th scope='row'>Módulo de Recepción de Productos</th>
+              <td>Análisis Estadístico Avanzado</td>
+            </tr>
+            <tr>
+              <th scope='row'>Interfaz Gráfica de Usuario (GUI) Optimizado</th>
+              <td>Historial de Ventas en Base de Datos Segura</td>
+            </tr>
+          </tbody>
         </div>
       </div>
     </div>
