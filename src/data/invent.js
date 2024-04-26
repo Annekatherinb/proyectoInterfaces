@@ -20,12 +20,12 @@ const invent =[
         image:""
     },
     {
-        name: "Harina Haz de Oros",
+        name: "Harina",
         description: "$4.000",
         image:""
     },
     {
-        name: "Choco krispi 500gr",
+        name: "Azucar 500gr",
         description: "12.500",
         image:""
     }
