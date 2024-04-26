@@ -7,11 +7,17 @@ function NavBar() {
     <div className='navbar'>
         <nav className='bar'>
           <img src='logotipo.png' alt='' className='logo'></img>
+          <img src='carrito-de-compras.png' alt='' className='carro'></img>
+          <img src='work-from-home.png' alt='' className='casa'></img>
+          <img src='usuario.png' alt='' className='usuario'></img>
+          <img src='portapapeles.png' alt='' className='check'></img>
         
           <ul>
               <li>Home</li>
               <li>Inventario</li>
-              <li>Métricas</li>
+              <li>Usuario</li>
+              <li>Metricas</li>
+
           </ul>
         </nav>
         <div className='search'>

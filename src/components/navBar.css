@@ -31,7 +31,7 @@ nav.bar {
 nav.bar ul {
     list-style: none;
     text-align: justify;
-    transform: translate(800px, -800%);
+    transform: translate(700px, -800%);
    
 
   }
@@ -64,7 +64,30 @@ nav.bar ul li:hover {
     transform: translate(-10%, -30%); 
 
 }
-
+.carro{
+  width: 2%; /* Ancho deseado */
+  height: 50%;
+  transform: translate(2170%, -240%);
+  cursor: pointer; 
+}
+.casa{
+  width: 2%; /* Ancho deseado */
+  height: 50%;
+  transform: translate(1390%, -240%);
+  cursor: pointer; 
+}
+.usuario{
+  width: 2%; /* Ancho deseado */
+  height: 50%;
+  transform: translate(1600%, -240%);
+  cursor: pointer; 
+}
+.check{
+  width: 2%; /* Ancho deseado */
+  height: 50%;
+  transform: translate(2200%, -240%);
+  cursor: pointer; 
+}
 nav.bar ul li {
     list-style: none;
     text-align: center;
