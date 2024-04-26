@@ -10,7 +10,7 @@ body {
     height: 50vh;
     display: flex;
     .search{
-        transform: translate(1260px, -550%);
+        transform: translate(1260px, -650%);
         
     }
     

@@ -1,8 +1,15 @@
 import React from 'react';
 import './navBar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link, useNavigate} from 'react-router-dom'
 
 function NavBar() {
+  const navigate = useNavigate(); // Obtén la función de navegación
+
+  const handleNavigate = (path) => {
+    navigate(path); // Navega a la ruta especificada
+  };
+
   return (
     <div className='navbar'>
         <nav className='bar'>
@@ -13,11 +20,10 @@ function NavBar() {
           <img src='portapapeles.png' alt='' className='check'></img>
         
           <ul>
-              <li>Home</li>
-              <li>Inventario</li>
-              <li>Usuario</li>
-              <li>Metricas</li>
-
+            <li><Link to='/home'>Home</Link></li> {/* Utiliza Link para dirigir a la página principal */}
+            <li onClick={() => handleNavigate('/Markt')}>Inventario</li> {/* Usa la función de navegación para dirigir a la página de inventario */}
+            <li>Usuario</li> {/* Utiliza Link para dirigir a la página de usuario */}
+            <li>Metricas</li>
           </ul>
         </nav>
         <div className='search'>

@@ -9,11 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <Router>
-        <HomePage/>
         <Routes>
-          
-          
-        
+          <Route path="/" element={ <Login /> } />
+          <Route path="Home" element={ <HomePage /> } />
+          <Route path="Markt" element={ <Market /> } />
         </Routes>
       </Router>
   </React.StrictMode>,

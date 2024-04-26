@@ -3,6 +3,7 @@ import './Home.css';
 import Sidebar from '../components/sideBar.jsx';
 import NavBar from '../components/navBar.jsx';
 
+
 function HomePage() {
   return (
     <div>
