@@ -1,7 +1,8 @@
 import "./Productos.css"
 
 function Productos({titulo = "Sin definir", 
-descripcion = "Sin definir"}){
+descripcion = "Sin definir",
+imagen = ""}){
     
     return (
         <div className="Productos">
