@@ -14,12 +14,18 @@ const limpiar = () =>{
 
     return (
         <div className="agregar">
-            <h2>{contador}</h2>
+            
             <nav className="botones">
+                <h2 className="cont">{contador}</h2>
                 <button onClick={sumar} className="but1">Agregar</button>
-                <button onClick={sumar} id="but2">Agregar</button>
-                <button onClick={sumar} id="but3">Agregar</button>
-                <button onClick={limpiar} id="but4">Limpiar</button>
+                <button onClick={sumar} className="but2">Agregar</button>
+                <button onClick={sumar} className="but3">Agregar</button>
+                <button onClick={sumar} className="but4">Agregar</button>
+                <button onClick={sumar} className="but5">Agregar</button>
+                <button onClick={sumar} className="but6">Agregar</button>
+
+                <a href="#"><button onClick={limpiar} className="but7">Limpiar</button></a>
+                
             </nav>
         </div>
     );
