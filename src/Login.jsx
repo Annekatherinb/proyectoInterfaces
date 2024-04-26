@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react'  
 import './Login.css'
 import {useNavigate} from 'react-router-dom'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const users = [
@@ -66,6 +66,7 @@ const users = [
     return (
       
       <div className="login">
+        <a class="fondo" href="#"></a>
         <div className="login-container">
           <form onSubmit={handleSubmit} >
             <img src="/usuario.png" alt="user" className='user'/>

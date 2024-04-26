@@ -4,18 +4,31 @@ body{
   max-width: 1280px;
   margin:  1px 0 0 1px;
   padding: 60px 1030px 280px 500px;
-  background: url("public/fondo.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-size: 1550px 694px;
+  background-color:#c7c8ddf0;
+
 }
 
 h1{
   transform: translate(130px, 8%);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
 
 p{
-  transform: translate(130px, 8%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  transform: translate(180%, -500%);
+  box-shadow: inset;
+}
+
+.fondo{
+  background:url('fondo.jpg') no-repeat;
+  height:0; /* altura cero */
+  background-size:80%;
+  text-indent:-9999px;
+  display:block;
+  padding-bottom: 55.14285%;
+  transform: scale(5, 4) translate(40%, 30%);
 }
 .logo {
   height: 6em;
@@ -55,18 +68,18 @@ p{
 .input-box {
   
   margin-bottom: 10px; /* Agrega un margen inferior a los input */
-  transform: translate(80px, 8%);
+  transform: translate(30%, 8%);
 }
 
 .remember {
   margin-bottom: 10px; /* Agrega un margen inferior al grupo de Remember y Forgot Password */
-  transform: translate(50px, 8%);
+  transform: translate(20%, 8%);
 }
 
 
 .but {
   margin-top: 10px; /* Agrega un margen superior al botón */
-  transform: translate(145px, 10%);
+  transform: translate(200%, 10%);
   width:70px;
   height:40px;
   border-radius: 10px;
@@ -103,7 +116,7 @@ p{
   width: 400px; /* Ancho del contenedor */
   margin: 0 auto; /* Centra horizontalmente */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
-  transform: translate(75px, 0%);
+  transform: translate(145%, -30%);
 }
 
 
@@ -119,7 +132,7 @@ p{
   position: absolute;
   top: 40px;
   left: 0;
-  transform: translateX(35%); 
+  transform: translate(220%, -30%); 
   width: 90%;
   height: 100%;
   opacity: 0.7;

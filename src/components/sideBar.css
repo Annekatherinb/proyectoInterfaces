@@ -4,6 +4,7 @@
     width: 200px; /* Ancho de la barra lateral */
     height: 1300px;
     background-color: #8e9091; /* Color de fondo */
+    background-size:cover;
     padding: 20px; /* Espaciado interno */
     text-align: center;
     transform: translate(0px, -9.4%);
@@ -11,9 +12,14 @@
   
   }
   
+  .bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgb(248 249 250 / 0%) !important;
+  }
   /* Estilos para los enlaces de navegación */
   .navbar-nav .nav-item {
     margin-bottom: 20px; /* Espaciado entre elementos */
+    background-color: #00000000;
   }
   
   .navbar-nav .nav-link {
@@ -23,7 +29,8 @@
     font-weight: bold; /* Negrita */
     font-size: 170%;
     text-align: justify;
-    transform: translate(0%, 50%);
+    transform: translate(0%, 20%);
+   
   }
   
   .navbar-nav .nav-link:after,
