@@ -23,8 +23,7 @@ const limpiar = () =>{
                 <button onClick={sumar} className="but4">Agregar</button>
                 <button onClick={sumar} className="but5">Agregar</button>
                 <button onClick={sumar} className="but6">Agregar</button>
-
-                <a href="#"><button onClick={limpiar} className="but7">Limpiar</button></a>
+                <button onClick={limpiar} className="but7">Limpiar</button>
                 
             </nav>
         </div>
