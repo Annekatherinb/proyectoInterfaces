@@ -1,5 +1,6 @@
 .Productos{
     width: 300px;
+    height: 200px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px #3333;
     background-color: rgb(177, 214, 238);

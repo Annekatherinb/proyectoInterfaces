@@ -21,7 +21,7 @@ const invent =[
         image:""
     },
     {
-        name: "Harina Haz de Oros",
+        name: "Harina",
         description: "$4.000",
         image:""
     },

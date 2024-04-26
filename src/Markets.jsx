@@ -18,7 +18,17 @@ function Markets(){
 
             <div className='container'>
                 {inventList}
+            
+                <nav className='imagenes'>
+                    < img src='huevo-duro.png' alt='' className='huevo'></img>
+                    < img src='leche.png' alt='' className='leche'></img>
+                    < img src='cereales.png' alt='' className='cereales'></img>
+                    < img src='aceite-de-girasol.png' alt='' className='aceite'></img>
+                    < img src='harina.png' alt='' className='harina'></img>
+                    < img src='azucar.png' alt='' className='azucar'></img>
+                </nav>
             </div>
+            
 
             <div>
                 <Contador />

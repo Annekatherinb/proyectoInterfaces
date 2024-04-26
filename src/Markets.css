@@ -1,7 +1,31 @@
 .container{
-    transform: translate(10%, 20%);
+
+    transform: translate(10%, 0%);
     display: flex;
-    gap: 10px;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
+    
+    
+
+    .huevo{
+        transform: scale(0.2) translate(10%, -600%);
+    }
+    .leche{
+        transform: scale(0.2) translate(-140%, -600%);
+    }
+    .cereales{
+        transform: scale(0.2) translate(700%, -1100%);
+    }
+    .aceite{
+        transform: scale(0.2) translate(-500%, -859%);
+    }
+    .harina{
+        transform: scale(0.2) translate( 350%, -1354%);
+    }
+    .azucar{
+        transform: scale(0.2) translate( 210%, -1354%);
+    }
+
 }
+
