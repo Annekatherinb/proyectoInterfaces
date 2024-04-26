@@ -8,6 +8,7 @@ imagen = ""}){
         <div className="Productos">
             <h2>{titulo}</h2>
             <p>{descripcion}</p>
+            <img src={imagen}/>
         </div>
     );
 

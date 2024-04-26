@@ -1,8 +1,9 @@
+
 const invent =[
     {
         name: "Huevo",
         description: "$15.000",
-        image:""
+        image: "lupa.png"
     },
     {
         name: "Leche Alqueria",
@@ -25,7 +26,7 @@ const invent =[
         image:""
     },
     {
-        name: "Choco krispi 500gr",
+        name: "Azucar 500gr",
         description: "12.500",
         image:""
     }

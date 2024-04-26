@@ -3,6 +3,7 @@ import "./Markets.css";
 import NavBar from './components/navBar.jsx';
 import Productos from './components/Productos.jsx';
 import invent from './data/invent.js';
+import Contador from './components/contador.jsx';
 
 function Markets(){
     const inventList = invent.map(v => {
@@ -17,6 +18,11 @@ function Markets(){
 
             <div className='container'>
                 {inventList}
+            </div>
+
+            <div>
+                <Contador />
+
             </div>
 
         </div>
